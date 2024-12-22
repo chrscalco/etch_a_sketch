@@ -1,6 +1,11 @@
 const container = document.querySelector("#container");
+const button = document.querySelector("#buttonStart");
 
+const buttonStart = document.createElement("button");
 
+buttonStart.classList.add("buttonStart");
+buttonStart.textContent = "Start Painting!";
+button.appendChild(buttonStart);
 
 function createGrid(rows, cols) {
     for (i=0; i <= rows; i++) {
@@ -15,8 +20,8 @@ function createGrid(rows, cols) {
     }
 
 }
-let cols = 16;
-let rows = 16;
+let cols = 32;
+let rows = 32;
 createGrid(rows,cols);
 
 const gridCellHover = document.querySelectorAll(".gridCellCol");

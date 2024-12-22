@@ -2,10 +2,23 @@ body {
     display: flex;
 }
 
+#container {
+    display: flex;
+    width: 480px;
+    height: 480px;
+    border: 2px solid black;
+}
+
+.buttonStart {
+    padding: 16px;
+    margin: 8px;
+    background-color: blanchedalmond;
+}
 
 .gridCellRow {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    flex: 1 1 0;
 }
 
 .gridCellCol {
@@ -13,8 +26,6 @@ body {
     flex-direction: column;
     border: 1px solid grey;
     background-color: white;
-    min-width: 10px;
-    min-height: 10px;
     margin: 0;
-    padding: 6px;
+    flex: 1 1 0;
 }
